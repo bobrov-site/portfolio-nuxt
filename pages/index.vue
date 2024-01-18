@@ -58,7 +58,7 @@
                         </div>
                     </div>
                     <LastProject :title="'Баннер для хекслета'" :breadcrumbs="['Пет-проекты', 'Тестовые задания']"
-                        :img-src="'/portfolio/img/hexlet/hexlet.png'" :project-url="'/pet/tusks/hexlet'" />
+                        :img-src="'/img/hexlet/hexlet.png'" :project-url="'/pet/tusks/hexlet'" />
                 </div>
             </div>
         </div>
