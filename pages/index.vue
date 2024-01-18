@@ -1,7 +1,4 @@
 <script setup>
-import ReviewCard from '../components/Review-card.vue'
-import LastProject from '../components/Last-project.vue'
-import TelegramPosts from '../components/Telegram-posts.vue';
 </script>
 <template>
     <main>
