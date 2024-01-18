@@ -11,8 +11,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <RouterLink class="nav-link" :class="{ active: route.name === 'home' }" to="/">Главная
-                            </RouterLink>
+                            <NuxtLink class="nav-link" :class="{ active: route.name === 'home' }" to="/">Главная
+                            </NuxtLink>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" :class="{ active: route.fullPath.includes('sites') }"
@@ -24,8 +24,8 @@
                                     <h6 class="dropdown-header">Фронтенд (vue.js)</h6>
                                 </li>
                                 <li>
-                                    <RouterLink :class="{ active: route.name === 'evrotrans' }" class="dropdown-item"
-                                        to="/sites/frontend/evrotrans">Билеты на автобус</RouterLink>
+                                    <NuxtLink :class="{ active: route.name === 'evrotrans' }" class="dropdown-item"
+                                        to="/sites/frontend/evrotrans">Билеты на автобус</NuxtLink>
                                 </li>
                                 <li>
                                     <hr class="dropdown-divider" />
@@ -34,16 +34,16 @@
                                     <h6 class="dropdown-header">Под ключ (дизайн и wordpress)</h6>
                                 </li>
                                 <li>
-                                    <RouterLink :class="{ active: route.name === 'mag' }" class="dropdown-item"
-                                        to="/sites/keys/mag">Агропромышленная техника и запчасти</RouterLink>
+                                    <NuxtLink :class="{ active: route.name === 'mag' }" class="dropdown-item"
+                                        to="/sites/keys/mag">Агропромышленная техника и запчасти</NuxtLink>
                                 </li>
                                 <li>
-                                    <RouterLink :class="{ active: route.name === 'stavgaz' }" class="dropdown-item"
-                                        to="/sites/keys/stavgaz">Газификация объектов</RouterLink>
+                                    <NuxtLink :class="{ active: route.name === 'stavgaz' }" class="dropdown-item"
+                                        to="/sites/keys/stavgaz">Газификация объектов</NuxtLink>
                                 </li>
                                 <li>
-                                    <RouterLink :class="{ active: route.name === 'gogocars' }" class="dropdown-item"
-                                        to="/sites/keys/gogocars">Авто из Сша в Россию</RouterLink>
+                                    <NuxtLink :class="{ active: route.name === 'gogocars' }" class="dropdown-item"
+                                        to="/sites/keys/gogocars">Авто из Сша в Россию</NuxtLink>
                                 </li>
                                 <li>
                                     <hr class="dropdown-divider" />
@@ -52,13 +52,13 @@
                                     <h6 class="dropdown-header">Разработка на Wordpress</h6>
                                 </li>
                                 <li>
-                                    <RouterLink :class="{ active: route.name === 'academyofmotivaction' }"
+                                    <NuxtLink :class="{ active: route.name === 'academyofmotivaction' }"
                                         class="dropdown-item" to="/sites/wordpress/academyofmotivaction">Корпоративный
-                                        тренер из США</RouterLink>
+                                        тренер из США</NuxtLink>
                                 </li>
                                 <li>
-                                    <RouterLink :class="{ active: route.name === 'printboom' }" class="dropdown-item"
-                                        to="/sites/wordpress/printboom">Печать фотографий на кружках</RouterLink>
+                                    <NuxtLink :class="{ active: route.name === 'printboom' }" class="dropdown-item"
+                                        to="/sites/wordpress/printboom">Печать фотографий на кружках</NuxtLink>
                                 </li>
                             </ul>
                         </li>
@@ -72,16 +72,16 @@
                                     <h6 class="dropdown-header">Тестовые задании</h6>
                                 </li>
                                 <li>
-                                    <RouterLink :class="{ active: route.name === 'yandex' }" class="dropdown-item"
+                                    <NuxtLink :class="{ active: route.name === 'yandex' }" class="dropdown-item"
                                         to="/pet/tusks/yandex">
                                         Лендинг для Яндекса
-                                    </RouterLink>
+                                    </NuxtLink>
                                 </li>
                                 <li>
-                                    <RouterLink :class="{ active: route.name === 'hexlet' }" class="dropdown-item"
+                                    <NuxtLink :class="{ active: route.name === 'hexlet' }" class="dropdown-item"
                                         to="/pet/tusks/hexlet">
                                         Баннер для Хекслета
-                                    </RouterLink>
+                                    </NuxtLink>
                                 </li>
                                 <li>
                                     <hr class="dropdown-divider" />
@@ -90,12 +90,12 @@
                                     <h6 class="dropdown-header">Учебные проекты</h6>
                                 </li>
                                 <li>
-                                    <RouterLink :class="{ active: route.name === 'brain-games' }" class="dropdown-item"
-                                        to="/pet/educational-projects/brain-games">Игры разума</RouterLink>
+                                    <NuxtLink :class="{ active: route.name === 'brain-games' }" class="dropdown-item"
+                                        to="/pet/educational-projects/brain-games">Игры разума</NuxtLink>
                                 </li>
                                 <li>
-                                    <RouterLink :class="{ active: route.name === 'gendiff' }" class="dropdown-item"
-                                        to="/pet/educational-projects/gendiff">Вычислитель отличий</RouterLink>
+                                    <NuxtLink :class="{ active: route.name === 'gendiff' }" class="dropdown-item"
+                                        to="/pet/educational-projects/gendiff">Вычислитель отличий</NuxtLink>
                                 </li>
                                 <li>
                                     <hr class="dropdown-divider" />
@@ -104,12 +104,12 @@
                                     <h6 class="dropdown-header">Собственные проекты</h6>
                                 </li>
                                 <li>
-                                    <RouterLink :class="{ active: route.name === 'todolist' }" class="dropdown-item"
-                                        to="/pet/pet-projects/todolist">Тудулист</RouterLink>
+                                    <NuxtLink :class="{ active: route.name === 'todolist' }" class="dropdown-item"
+                                        to="/pet/pet-projects/todolist">Тудулист</NuxtLink>
                                 </li>
                                 <li>
-                                    <RouterLink :class="{ active: route.name === 'hangman' }" class="dropdown-item"
-                                        to="/pet/pet-projects/hangman">Виселица (hangman)</RouterLink>
+                                    <NuxtLink :class="{ active: route.name === 'hangman' }" class="dropdown-item"
+                                        to="/pet/pet-projects/hangman">Виселица (hangman)</NuxtLink>
                                 </li>
                             </ul>
                         </li>
@@ -136,7 +136,7 @@
 </template>
   
 <script setup>
-import { RouterLink, useRoute } from 'vue-router'
+import { NuxtLink, useRoute } from 'vue-router'
 
 const route = useRoute()
 
