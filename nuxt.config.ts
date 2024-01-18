@@ -4,5 +4,6 @@ export default defineNuxtConfig({
   css: ['~/assets/styles/main.scss'],
   plugins: [
     { src: '~/plugins/useBootstrap.ts', mode: 'client' }
-  ]
+  ],
+  modules: ["nuxt-bootstrap-icons"]
 })
