@@ -52,8 +52,8 @@
                                     <h6 class="dropdown-header">Разработка на Wordpress</h6>
                                 </li>
                                 <li>
-                                    <NuxtLink :class="{ active: route.name === 'academyofmotivaction' }"
-                                        class="dropdown-item" to="/sites/wordpress/academyofmotivaction">Корпоративный
+                                    <NuxtLink :class="{ active: route.name === 'academyofmotivation' }"
+                                        class="dropdown-item" to="/sites/wordpress/academyofmotivation">Корпоративный
                                         тренер из США</NuxtLink>
                                 </li>
                                 <li>
@@ -90,8 +90,8 @@
                                     <h6 class="dropdown-header">Учебные проекты</h6>
                                 </li>
                                 <li>
-                                    <NuxtLink :class="{ active: route.name === 'brain-games' }" class="dropdown-item"
-                                        to="/pet/educational-projects/brain-games">Игры разума</NuxtLink>
+                                    <NuxtLink :class="{ active: route.name === 'braingames' }" class="dropdown-item"
+                                        to="/pet/educational-projects/braingames">Игры разума</NuxtLink>
                                 </li>
                                 <li>
                                     <NuxtLink :class="{ active: route.name === 'gendiff' }" class="dropdown-item"
@@ -136,7 +136,6 @@
 </template>
   
 <script setup>
-import { NuxtLink, useRoute } from 'vue-router'
 
 const route = useRoute()
 
