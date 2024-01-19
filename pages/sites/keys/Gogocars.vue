@@ -26,9 +26,9 @@
     'Запись видеоинструкции по работе с сайтом'
   ]
   const images = [
-    '/portfolio/img/gogocars/gogocars1.jpeg',
-    '/portfolio/img/gogocars/gogocars2.jpeg',
-    '/portfolio/img/gogocars/gogocars3.jpeg'
+    '/img/gogocars/gogocars1.jpeg',
+    '/img/gogocars/gogocars2.jpeg',
+    '/img/gogocars/gogocars3.jpeg'
   ]
   
   const title = 'Авто из США в Россию'

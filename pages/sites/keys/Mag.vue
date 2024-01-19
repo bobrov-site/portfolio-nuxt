@@ -28,9 +28,9 @@
     'Запись видеоинструкции по работе с сайтом'
   ]
   const images = [
-    '/portfolio/img/mag/mag1.jpeg',
-    '/portfolio/img/mag/mag2.jpeg',
-    '/portfolio/img/mag/mag3.jpeg'
+    '/img/mag/mag1.jpeg',
+    '/img/mag/mag2.jpeg',
+    '/img/mag/mag3.jpeg'
   ]
   
   const title = 'Продажа агропромышленной техники и запчастей'

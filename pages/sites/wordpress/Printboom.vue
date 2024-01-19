@@ -9,10 +9,10 @@ const achivments =
     'Разработал сайт на Wordpress для компании Print-boom. Сайт получился работоспособен. Сайт приносит заявки на покупку кружек и сувенирной продукции.'
 const responsibilities = ['Разработка сайта на Wordpress по ТЗ']
 const images = [
-    '/portfolio/img/printboom/printboom1.jpeg',
-    '/portfolio/img/printboom/printboom2.jpeg',
-    '/portfolio/img/printboom/printboom3.jpeg',
-    '/portfolio/img/printboom/printboom4.jpeg'
+    '/img/printboom/printboom1.jpeg',
+    '/img/printboom/printboom2.jpeg',
+    '/img/printboom/printboom3.jpeg',
+    '/img/printboom/printboom4.jpeg'
 ]
 
 const title = 'Печать фотографий на кружках'

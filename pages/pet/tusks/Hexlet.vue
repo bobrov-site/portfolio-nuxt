@@ -13,7 +13,7 @@ const responsibilities = [
     'Использование Bootstrap 5 в качетве UI фреймворка',
     'Выполнение задачи по ТЗ'
 ]
-const images = ['/portfolio/img/hexlet/hexlet.png']
+const images = ['/img/hexlet/hexlet.png']
 
 const title = 'Тестовое задание для Хекслета'
 const siteUrl = 'https://bobrov-site.github.io/hexlet-test-tusk.github.io/'
