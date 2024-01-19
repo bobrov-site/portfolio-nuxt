@@ -1,0 +1,86 @@
+<script setup>
+const sources = [
+    {
+        sectionId: 0,
+        sectionTitle: 'Статьи', 
+        sources: [
+            {
+                sourceId: 0,
+                sectionId: 0,
+                title: 'Заголовок статьи',
+                description: 'Описание статьи',
+                section: 'Статьи',
+                url: 'https:google.com',
+                pushedBy: 'Даниил Бобров',
+                source: 'телеграм канал'
+            }
+        ]
+    },
+    {
+        sectionId: 1,
+        sectionTitle: 'Видео',
+        sources: [
+            {
+                sourceId: 0,
+                sectionId: 1,
+                title: 'Название видео',
+                description: 'Описание статьи',
+                section: 'Видео',
+                url: 'https://youtu.be/dQw4w9WgXcQ?si=PKNv5yr1ouZNGReO',
+                pushedBy: 'Даниил Бобров'
+            }
+        ]
+    },
+    {
+        sectionId: 2,
+        sectionTitle: 'Сайты',
+        sources: [
+            {
+                sourceId: 0,
+                sectionId: 2,
+                title: 'EazyOffer',
+                description: 'Описание сайта',
+                section: 'Сайты',
+                url: 'https://easyoffer.ru/',
+                pushedBy: 'Даниил Бобров'
+            }
+        ]
+    }
+]
+</script>
+<template>
+    <div class="card mt-4">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center flex-wrap">
+                    <h1 class="text-center">База знаний для фронтенд-разработчика</h1>
+                    <div class="w-100">
+                        <p class="text-center">Это open-source проект, где вы можете найти полезную информацию о
+                            фронтенд-разработке <br>
+                            Здесь опубликованы статьи, видео, сайты, которые могут прокачать вас, как
+                            фронтенд-разработчика
+                        </p>
+                    </div>
+                    <button class="btn btn-lg btn-outline-primary">Опубликовать</button>
+                    <span class="d-block w-100 text-center">или</span>
+                    <input type="text" class="form-control form-control-lg" id="search" placeholder="Найти например: javascript">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Статьи</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<style lang="scss" scoped>
+#search {
+    max-width: 720px;
+}
+</style>
