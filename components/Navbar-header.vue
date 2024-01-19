@@ -11,7 +11,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <NuxtLink class="nav-link" :class="{ active: route.name === 'home' }" to="/">Главная
+                            <NuxtLink class="nav-link" :class="{ active: route.name === 'index' }" to="/">Главная
                             </NuxtLink>
                         </li>
                         <li class="nav-item dropdown">
@@ -24,7 +24,7 @@
                                     <h6 class="dropdown-header">Фронтенд (vue.js)</h6>
                                 </li>
                                 <li>
-                                    <NuxtLink :class="{ active: route.name === 'evrotrans' }" class="dropdown-item"
+                                    <NuxtLink :class="{ active: route.name === 'sites-frontend-Evrotrans' }" class="dropdown-item"
                                         to="/sites/frontend/evrotrans">Билеты на автобус</NuxtLink>
                                 </li>
                                 <li>
@@ -34,15 +34,15 @@
                                     <h6 class="dropdown-header">Под ключ (дизайн и wordpress)</h6>
                                 </li>
                                 <li>
-                                    <NuxtLink :class="{ active: route.name === 'mag' }" class="dropdown-item"
+                                    <NuxtLink :class="{ active: route.name === 'sites-keys-Mag' }" class="dropdown-item"
                                         to="/sites/keys/mag">Агропромышленная техника и запчасти</NuxtLink>
                                 </li>
                                 <li>
-                                    <NuxtLink :class="{ active: route.name === 'stavgaz' }" class="dropdown-item"
+                                    <NuxtLink :class="{ active: route.name === 'sites-keys-Stavgaz' }" class="dropdown-item"
                                         to="/sites/keys/stavgaz">Газификация объектов</NuxtLink>
                                 </li>
                                 <li>
-                                    <NuxtLink :class="{ active: route.name === 'gogocars' }" class="dropdown-item"
+                                    <NuxtLink :class="{ active: route.name === 'sites-keys-Gogocars' }" class="dropdown-item"
                                         to="/sites/keys/gogocars">Авто из Сша в Россию</NuxtLink>
                                 </li>
                                 <li>
@@ -52,18 +52,18 @@
                                     <h6 class="dropdown-header">Разработка на Wordpress</h6>
                                 </li>
                                 <li>
-                                    <NuxtLink :class="{ active: route.name === 'academyofmotivation' }"
+                                    <NuxtLink :class="{ active: route.name === 'sites-wordpress-Academyofmotivation' }"
                                         class="dropdown-item" to="/sites/wordpress/academyofmotivation">Корпоративный
                                         тренер из США</NuxtLink>
                                 </li>
                                 <li>
-                                    <NuxtLink :class="{ active: route.name === 'printboom' }" class="dropdown-item"
+                                    <NuxtLink :class="{ active: route.name === 'sites-wordpress-Printboom' }" class="dropdown-item"
                                         to="/sites/wordpress/printboom">Печать фотографий на кружках</NuxtLink>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            <a class="nav-link dropdown-toggle" :class="{ active: route.fullPath.includes('pet') }" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Пет-проекты
                             </a>
@@ -72,13 +72,13 @@
                                     <h6 class="dropdown-header">Тестовые задании</h6>
                                 </li>
                                 <li>
-                                    <NuxtLink :class="{ active: route.name === 'yandex' }" class="dropdown-item"
+                                    <NuxtLink :class="{ active: route.name === 'pet-tusks-Yandex' }" class="dropdown-item"
                                         to="/pet/tusks/yandex">
                                         Лендинг для Яндекса
                                     </NuxtLink>
                                 </li>
                                 <li>
-                                    <NuxtLink :class="{ active: route.name === 'hexlet' }" class="dropdown-item"
+                                    <NuxtLink :class="{ active: route.name === 'pet-tusks-Hexlet' }" class="dropdown-item"
                                         to="/pet/tusks/hexlet">
                                         Баннер для Хекслета
                                     </NuxtLink>
@@ -90,11 +90,11 @@
                                     <h6 class="dropdown-header">Учебные проекты</h6>
                                 </li>
                                 <li>
-                                    <NuxtLink :class="{ active: route.name === 'braingames' }" class="dropdown-item"
+                                    <NuxtLink :class="{ active: route.name === 'pet-educational-projects-BrainGames' }" class="dropdown-item"
                                         to="/pet/educational-projects/braingames">Игры разума</NuxtLink>
                                 </li>
                                 <li>
-                                    <NuxtLink :class="{ active: route.name === 'gendiff' }" class="dropdown-item"
+                                    <NuxtLink :class="{ active: route.name === 'pet-educational-projects-Gendiff' }" class="dropdown-item"
                                         to="/pet/educational-projects/gendiff">Вычислитель отличий</NuxtLink>
                                 </li>
                                 <li>
@@ -104,11 +104,11 @@
                                     <h6 class="dropdown-header">Собственные проекты</h6>
                                 </li>
                                 <li>
-                                    <NuxtLink :class="{ active: route.name === 'todolist' }" class="dropdown-item"
+                                    <NuxtLink :class="{ active: route.name === 'pet-pet-projects-Todolist' }" class="dropdown-item"
                                         to="/pet/pet-projects/todolist">Тудулист</NuxtLink>
                                 </li>
                                 <li>
-                                    <NuxtLink :class="{ active: route.name === 'hangman' }" class="dropdown-item"
+                                    <NuxtLink :class="{ active: route.name === 'pet-pet-projects-Hangman' }" class="dropdown-item"
                                         to="/pet/pet-projects/hangman">Виселица (hangman)</NuxtLink>
                                 </li>
                             </ul>
@@ -138,6 +138,7 @@
 <script setup>
 
 const route = useRoute()
+// TODO перенести все пафы в единый массив обьектов
 
 const callMe = () => {
     return (location.href = 'tel:+7 962 425 66 01')
