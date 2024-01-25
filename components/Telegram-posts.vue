@@ -54,6 +54,7 @@ const addClassToImages = () => {
     img {
         max-height: 250px;
         object-fit: cover;
+        width: 100%;
     }
 }
 </style>
