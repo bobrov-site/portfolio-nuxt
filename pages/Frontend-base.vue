@@ -1,4 +1,41 @@
 <script setup>
+import { createClient } from '@supabase/supabase-js'
+const runtimeConfig = useRuntimeConfig();
+// console.log(runtimeConfig.supabaseUrl);
+// console.log(runtimeConfig.supabaseKey);
+// TODO env
+const supabase = createClient('https://cyzmzybefioslszyvhzm.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN5em16eWJlZmlvc2xzenl2aHptIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDY1MTMxMzYsImV4cCI6MjAyMjA4OTEzNn0.hYNPef34xR2YLX8WEpf2FbDPG2Xb_DX6PieW8QfBylE');
+const articles = ref([])
+const videos = ref([])
+const sites = ref([])
+const repositories = ref([])
+
+const getArticles = async() => {
+    const { data } = await supabase.from('articles').select()
+    articles.value = data
+}
+
+const getVideos = async() => {
+    const {data} = await supabase.from('videos').select();
+    videos.value = data
+}
+
+const getSites = async() => {
+    const {data} = await supabase.from('sites').select();
+    sites.value = data
+}
+
+const getRepositories = async() => {
+    const {data} = await supabase.from('repositories').select();
+    repositories.value = data
+}
+
+onMounted(() => {
+    getArticles();
+    getRepositories();
+    getSites();
+    getVideos();
+})
 </script>
 <template>
     <div class="card mt-4">
@@ -20,7 +57,7 @@
             </div>
             <div class="row mb-4 mt-4">
                 <div class="col-12">
-                    <SourceCard sectionTitle="Статьи"/>
+                    <SourceCard sectionTitle="Статьи" :sources="articles"/>
                 </div>
             </div>
             <div class="row mb-4">
