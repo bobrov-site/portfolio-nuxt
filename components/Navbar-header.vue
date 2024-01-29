@@ -124,8 +124,8 @@
                         <a class="link-icon" href="https://t.me/TheWalkingDan" target="_blank">
                             <i class="bi bi-telegram me-2"></i>
                         </a>
-                        <a class="link-icon" href="https://www.instagram.com/bobrov_site/" target="_blank">
-                            <i class="bi bi-instagram me-4"></i>
+                        <a class="link-icon" href="https://www.linkedin.com/in/daniil-bobrov/" target="_blank">
+                            <i class="bi bi-linkedin me-4"></i>
                         </a>
                         <button @click="callMe()" type="button" class="btn btn-outline-primary">
                             Связаться со мной
@@ -141,7 +141,6 @@
 <script setup>
 
 const route = useRoute()
-// TODO перенести все пафы в единый массив обьектов
 
 const callMe = () => {
     return (location.href = 'tel:+7 962 425 66 01')
@@ -149,7 +148,7 @@ const callMe = () => {
 </script>
   
 <style lang="scss" scoped>
-.bi-instagram,
+.bi-linkedin,
 .bi-telegram,
 .bi-github {
     font-size: 2rem;
