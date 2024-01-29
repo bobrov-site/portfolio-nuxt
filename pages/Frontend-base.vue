@@ -10,24 +10,28 @@ const videos = ref([])
 const sites = ref([])
 const repositories = ref([])
 
-const getArticles = async() => {
+const getArticles = async () => {
     const { data } = await supabase.from('articles').select()
     articles.value = data
 }
 
-const getVideos = async() => {
-    const {data} = await supabase.from('videos').select();
+const getVideos = async () => {
+    const { data } = await supabase.from('videos').select();
     videos.value = data
 }
 
-const getSites = async() => {
-    const {data} = await supabase.from('sites').select();
+const getSites = async () => {
+    const { data } = await supabase.from('sites').select();
     sites.value = data
 }
 
-const getRepositories = async() => {
-    const {data} = await supabase.from('repositories').select();
+const getRepositories = async () => {
+    const { data } = await supabase.from('repositories').select();
     repositories.value = data
+}
+
+const submitForm = () => {
+    console.log('submit');
 }
 
 onMounted(() => {
@@ -38,6 +42,47 @@ onMounted(() => {
 })
 </script>
 <template>
+    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="formModalLabel">Добавить полезный материал</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="card-text">
+                        Заполните форму для добавления материала на сайт. <br>
+                        Добавление контента может занять время на ее модерацию
+                    </p>
+                    <form @submit.prevent="submitForm()">
+                        <div class="mb-3">
+                            <select class="form-select" aria-label="Выберите категорию">
+                                <option selected>Статья</option>
+                                <option value="1">Репозиторий</option>
+                                <option value="2">Сайт</option>
+                                <option value="3">Видео</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="title" class="form-label">Название</label>
+                            <input type="email" class="form-control" id="title">
+                        </div>
+                        <div class="mb-3">
+                            <label for="description" class="form-label">Описание</label>
+                            <textarea class="form-control" id="description" rows="3"
+                                aria-describedby="descriptionHelp"></textarea>
+                            <div id="descriptionHelp" class="form-text">Необязательно</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="url" class="form-label">Ссылка</label>
+                            <input type="url" class="form-control" id="url">    
+                        </div>
+                        <button type="submit" class="btn btn-primary">Опубликовать</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="card mt-4">
         <div class="card-body">
             <div class="row">
@@ -50,29 +95,31 @@ onMounted(() => {
                             фронтенд-разработчика
                         </p>
                     </div>
-                    <button class="btn btn-lg btn-outline-primary">Опубликовать</button>
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#formModal"
+                        class="btn btn-lg btn-outline-primary">Опубликовать</button>
                     <span class="d-block w-100 text-center">или</span>
-                    <input type="text" class="form-control form-control-lg" id="search" placeholder="Найти например: javascript">
+                    <input type="text" class="form-control form-control-lg" id="search"
+                        placeholder="Найти например: javascript">
                 </div>
             </div>
             <div class="row mb-4 mt-4">
                 <div class="col-12">
-                    <SourceCard sectionTitle="Статьи" :sources="articles"/>
+                    <SourceCard sectionTitle="Статьи" :sources="articles" />
                 </div>
             </div>
             <div class="row mb-4">
                 <div class="col-12">
-                    <SourceCard sectionTitle="Видео"/>
+                    <SourceCard sectionTitle="Видео" />
                 </div>
             </div>
             <div class="row mb-4">
                 <div class="col-12">
-                    <SourceCard sectionTitle="Сайты"/>
+                    <SourceCard sectionTitle="Сайты" />
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
-                    <SourceCard sectionTitle="Репозитории"/>
+                    <SourceCard sectionTitle="Репозитории" />
                 </div>
             </div>
         </div>
