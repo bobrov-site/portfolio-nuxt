@@ -5,7 +5,6 @@
                 Исходный код сайта на GitHub
             </a>
         </p>
-        <p class="m-0 fw-lighter">*Инстаграм запрещён в РФ</p>
     </div>
 </template>
   
