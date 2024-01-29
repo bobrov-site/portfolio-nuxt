@@ -1,5 +1,5 @@
 <script setup>
-const sources = [
+const data = [
     {
         sectionId: 0,
         sectionTitle: 'Статьи', 
@@ -66,13 +66,19 @@ const sources = [
                     <input type="text" class="form-control form-control-lg" id="search" placeholder="Найти например: javascript">
                 </div>
             </div>
-            <div class="row mt-4">
-                <div class="col-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">Статьи</h3>
-                        </div>
-                    </div>
+            <div class="row mb-4 mt-4">
+                <div class="col-12">
+                    <SourceCard sectionTitle="Статьи"/>
+                </div>
+            </div>
+            <div class="row mb-4">
+                <div class="col-12">
+                    <SourceCard sectionTitle="Видео"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <SourceCard sectionTitle="Сайты"/>
                 </div>
             </div>
         </div>
