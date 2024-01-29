@@ -25,7 +25,6 @@ const data = [
                 sectionId: 1,
                 title: 'Название видео',
                 description: 'Описание статьи',
-                section: 'Видео',
                 url: 'https://youtu.be/dQw4w9WgXcQ?si=PKNv5yr1ouZNGReO',
                 pushedBy: 'Даниил Бобров'
             }
@@ -40,8 +39,21 @@ const data = [
                 sectionId: 2,
                 title: 'EazyOffer',
                 description: 'Описание сайта',
-                section: 'Сайты',
                 url: 'https://easyoffer.ru/',
+                pushedBy: 'Даниил Бобров'
+            }
+        ]
+    },
+    {
+        sectionId: 3,
+        sectionTitle: 'Репозитории',
+        sources: [
+            {
+                sourceId: 0,
+                sectionId: 3,
+                title: 'Название репозитория',
+                description: 'Описание репозитория',
+                url: 'https://github.com',
                 pushedBy: 'Даниил Бобров'
             }
         ]
@@ -76,9 +88,14 @@ const data = [
                     <SourceCard sectionTitle="Видео"/>
                 </div>
             </div>
-            <div class="row">
+            <div class="row mb-4">
                 <div class="col-12">
                     <SourceCard sectionTitle="Сайты"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <SourceCard sectionTitle="Репозитории"/>
                 </div>
             </div>
         </div>
