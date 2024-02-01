@@ -1,13 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  runtimeConfig: {
-    supabaseUrl: '',
-    supabaseKey: ''
-  },
   devtools: { enabled: true },
+  supabase: {
+    redirect: false,
+  },
   css: ['~/assets/styles/main.scss'],
   plugins: [
-    { src: '~/plugins/useBootstrap.ts', mode: 'client' }
+    { src: '~/plugins/useBootstrap.ts', mode: 'client' },
   ],
-  modules: ["nuxt-bootstrap-icons"]
+  modules: ["nuxt-bootstrap-icons", '@nuxtjs/supabase']
 })
