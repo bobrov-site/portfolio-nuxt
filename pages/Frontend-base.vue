@@ -1,4 +1,5 @@
 <script setup>
+//https://supabase.nuxtjs.org/get-started
 const supabase = useSupabaseClient();
 const articles = ref([])
 const videos = ref([])
