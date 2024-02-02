@@ -1,5 +1,4 @@
 <script setup>
-//https://supabase.nuxtjs.org/get-started
 const supabase = useSupabaseClient();
 const articles = ref([])
 const videos = ref([])
@@ -26,10 +25,6 @@ const getRepositories = async () => {
     repositories.value = data
 }
 
-const submitForm = () => {
-    // TODO добавить валидацию данных. Валидация формы должна смотреть похожие названия ресурсов и смотреть одинаковые ссылки
-}
-
 onMounted(() => {
     getArticles();
     getRepositories();
@@ -38,47 +33,7 @@ onMounted(() => {
 })
 </script>
 <template>
-    <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="formModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="formModalLabel">Добавить полезный материал</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p class="card-text">
-                        Заполните форму для добавления материала на сайт. <br>
-                        Добавление контента может занять время на ее модерацию
-                    </p>
-                    <form @submit.prevent="submitForm()">
-                        <div class="mb-3">
-                            <select class="form-select" aria-label="Выберите категорию">
-                                <option selected>Статья</option>
-                                <option value="1">Репозиторий</option>
-                                <option value="2">Сайт</option>
-                                <option value="3">Видео</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="title" class="form-label">Название</label>
-                            <input type="email" class="form-control" id="title">
-                        </div>
-                        <div class="mb-3">
-                            <label for="description" class="form-label">Описание</label>
-                            <textarea class="form-control" id="description" rows="3"
-                                aria-describedby="descriptionHelp"></textarea>
-                            <div id="descriptionHelp" class="form-text">Необязательно</div>
-                        </div>
-                        <div class="mb-3">
-                            <label for="url" class="form-label">Ссылка</label>
-                            <input type="url" class="form-control" id="url">    
-                        </div>
-                        <button type="submit" class="btn btn-primary">Опубликовать</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+    <ModalForm/>
     <div class="card mt-4">
         <div class="card-body">
             <div class="row">
