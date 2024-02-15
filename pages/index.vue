@@ -56,6 +56,14 @@
             </div>
             <LastProject :title="'Баннер для хекслета'" :breadcrumbs="['Пет-проекты', 'Тестовые задания']"
                 :img-src="'/img/hexlet/hexlet.png'" :project-url="'/pet/tusks/hexlet'" />
+            <div class="card w-100 p-2 mt-4">
+                <div class="card-body">
+                    <h4 class="card-title">Wakatime статистика</h4>
+                    <figure>
+                        <embed src="https://wakatime.com/share/@bobrovSite/39094ffb-84bc-4f5e-b49b-deb58cf01c87.svg">
+                    </figure>
+                </div>
+            </div>
         </div>
     </div>
 </template>
