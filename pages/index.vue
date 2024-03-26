@@ -54,8 +54,8 @@
                         class="btn btn-primary">Смотреть больше отзывов</a>
                 </div>
             </div>
-            <LastProject :title="'Баннер для хекслета'" :breadcrumbs="['Пет-проекты', 'Тестовые задания']"
-                :img-src="'/img/hexlet/hexlet.png'" :project-url="'/pet/tusks/hexlet'" />
+            <LastProject :title="'RSS Aggregator'" :breadcrumbs="['Пет-проекты', 'Учебные проекты']"
+                :img-src="'/img/hexlet/hexlet.png'" :project-url="'/pet/educational-projects/rssaggregator'" :date="'21.04.2022'"/>
             <div class="card w-100 p-2 mt-4">
                 <div class="card-body">
                     <h4 class="card-title">Wakatime статистика</h4>
