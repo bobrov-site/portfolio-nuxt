@@ -31,9 +31,7 @@
                             </li>
                         </ul>
                         <h2 class="card-title">Достижения:</h2>
-                        <p class="card-text">
-                            {{ props.achivments }}
-                        </p>
+                        <p class="card-text" v-html="props.achivments"></p>
                         <h2 v-if="props.techStack" class="card-title">Технологии:</h2>
                         <div v-if="props.techStack" class="mb-4">
                             <span v-for="(item, index) in sortTechStack(props.techStack)" :key="index"
