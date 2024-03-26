@@ -10,7 +10,7 @@
                             :class="{ 'me-2': index === 0 }" class="badge text-bg-secondary">{{ breadcrumb }}</span>
                     </div>
                     <img class="project-preview rounded w-100" :src="props.imgSrc" alt="" />
-                    <span class="text-secondary d-block">03.11.2023</span>
+                    <span class="text-secondary d-block">{{ props.date }}</span>
                     <NuxtLink class="btn btn-primary mt-2 mb-2" :to="props.projectUrl">Посмотреть проект</NuxtLink>
                 </div>
             </div>
@@ -24,7 +24,8 @@ const props = defineProps({
     imgSrc: String,
     projectUrl: String,
     projectDate: String,
-    breadcrumbs: Array
+    breadcrumbs: Array,
+    date: String,
 })
 </script>
   
