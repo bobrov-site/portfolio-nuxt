@@ -98,6 +98,11 @@
                                         to="/pet/educational-projects/gendiff">Вычислитель отличий</NuxtLink>
                                 </li>
                                 <li>
+                                    <NuxtLink :class="{active: route.name === 'pet-educational-projects-RssAggregator'}" class="dropdown-item" to="/pet/educational-projects/rssaggregator">
+                                        RSS Агрегатор
+                                    </NuxtLink>
+                                </li>
+                                <li>
                                     <hr class="dropdown-divider" />
                                 </li>
                                 <li>
