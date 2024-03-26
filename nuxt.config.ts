@@ -8,5 +8,5 @@ export default defineNuxtConfig({
   plugins: [
     { src: '~/plugins/useBootstrap.ts', mode: 'client' },
   ],
-  modules: ["nuxt-bootstrap-icons", '@nuxtjs/supabase']
+  modules: ["nuxt-bootstrap-icons"]
 })
