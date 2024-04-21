@@ -5,6 +5,11 @@
   
 <script setup>
 import ProjectContent from '../components/Project-content.vue'
+useSeoMeta({
+    title: title,
+    description: achivments,
+    ogDescription: achivments
+})
 const achivments =
     'Разработал сайт по дизайну из Figma на Wordpress для корпоративного тренера из США. Создана система для обучения внутри сайта, где учитель может добавлять курсы и проверять задания учеников. Встроена система оплаты stripe для оплаты курсов'
 const responsibilities = [

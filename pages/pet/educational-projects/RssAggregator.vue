@@ -4,6 +4,11 @@
 </template>
 
 <script setup>
+useSeoMeta({
+    title: title,
+    description: achivments,
+    ogDescription: achivments
+})
 const achivments =
     `Создал приложение для агрегации RSS-потоков,с помощью которых удобно читать разнообразные источники, 
     например, блоги. Он позволяет добавлять неограниченное количество RSS-лент, 

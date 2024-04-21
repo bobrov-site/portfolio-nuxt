@@ -5,6 +5,11 @@
   
 <script setup>
 import ProjectContent from '../components/Project-content.vue'
+useSeoMeta({
+    title: title,
+    description: achivments,
+    ogDescription: achivments
+})
 const achivments =
     'Создал игру "виселица". Изучил основы typescript. Разбил игру по компонентам. Воспроизвел все пользовательские сценарии, чтобы не было неожиданных ошибок или действий от пользователя'
 

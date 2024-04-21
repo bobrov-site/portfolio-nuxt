@@ -5,6 +5,11 @@
   
 <script setup>
 import ProjectContent from '../components/Project-content.vue'
+useSeoMeta({
+    title: title,
+    description: achivments,
+    ogDescription: achivments
+})
 const achivments =
     'Создал консольную игру "Игры разума". Разобрался в основах javascript. Научился настраивать свой собственный npm пакет. Научился пользоваться линтером. Научился расписывать полное описание к проекту на Гитхаб. Научился делать проект модульным. Научился настраивать Eslint на параметр Airbnb. Научился добавлять команды при помощи makefile'
 const responsibilities = [

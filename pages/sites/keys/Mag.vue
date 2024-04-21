@@ -12,7 +12,11 @@
   
   <script setup>
   import ProjectContent from '../components/Project-content.vue'
-  
+  useSeoMeta({
+    title: title,
+    description: achivments,
+    ogDescription: achivments
+})
   const achivments =
     'Разработал сайт под ключ для компании Монолит Агро Групп. На сайте можно редактировать контент из админ панели в любом месте. Можно пополнять продукцию компании, редактировать и удалять. Сайт приносит заявки на покупку оборудования и запчастей.'
   const responsibilities = [

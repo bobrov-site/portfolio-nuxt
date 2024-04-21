@@ -11,6 +11,11 @@
   
   <script setup>
   import ProjectContent from '../components/Project-content.vue'
+  useSeoMeta({
+    title: title,
+    description: achivments,
+    ogDescription: achivments
+})
   const achivments =
     'Разработал сайт под ключ для компании Go-go-cars. Разработал квиз для подбора автомобиля. Добавил форму обратной связи для получения заявок на почту клиента. Сделал сайт адаптивным для всех устройств. Сделал сайт редактируемым с интеграцией из instagram'
   const responsibilities = [

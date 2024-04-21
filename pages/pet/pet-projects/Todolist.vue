@@ -5,6 +5,11 @@
   
 <script setup>
 import ProjectContent from '../components/Project-content.vue'
+useSeoMeta({
+    title: title,
+    description: achivments,
+    ogDescription: achivments
+})
 const achivments =
     'Создал приложение список задач. Приложение загружает данные по fake api, есть пагинация тудушек. Есть поиск по задачам. Сделал адаптивную версию. Сделал валидацию формы регистрации и входа пользователя. Научился работать с firebase, теперь возможно добавлять новых пользователей, а так же взаимодействовать со старыми.'
 const responsibilities = [

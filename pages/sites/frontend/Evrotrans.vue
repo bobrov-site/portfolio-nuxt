@@ -5,7 +5,11 @@
   
 <script setup>
 import ProjectContent from '../components/Project-content.vue'
-
+useSeoMeta({
+    title: title,
+    description: achivments,
+    ogDescription: achivments
+})
 const achivments =
     'Разработал сайт evrotrans.net на vue.js. Сайт стал работать быстрее, стал масштабируемым. Настроил компонент поиска билета. Настроил страницу оформления билетов. Написал валидацию для оформления билетов. Сверстал все страницы предусмотренные дизайнером из Figma и адаптировал под все устройства.'
 const responsibilities = [

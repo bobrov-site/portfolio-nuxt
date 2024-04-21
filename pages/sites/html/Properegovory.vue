@@ -5,6 +5,11 @@
   
 <script setup>
 import ProjectContent from '../components/Project-content.vue'
+useSeoMeta({
+    title: title,
+    description: achivments,
+    ogDescription: achivments
+})
 const achivments =
     'Сверстал адаптивно сайт по макету из Figma. Сайт быстро загружается и работает на всех устройствах'
 const responsibilities = [
