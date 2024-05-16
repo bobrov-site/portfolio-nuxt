@@ -5,5 +5,8 @@ export default defineNuxtConfig({
   plugins: [
     { src: '~/plugins/useBootstrap.ts', mode: 'client' },
   ],
-  modules: ["nuxt-bootstrap-icons"]
+  modules: ["nuxt-bootstrap-icons", 'nuxt-yandex-metrika'],
+  yandexMetrika: {
+    id: process.env.NUXT_YANDEX_METRICA_ID,
+  }
 })

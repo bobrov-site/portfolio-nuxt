@@ -12,6 +12,7 @@
   "devDependencies": {
     "nuxt": "^3.9.1",
     "nuxt-bootstrap-icons": "^1.1.5",
+    "nuxt-yandex-metrika": "^1.2.3",
     "sass": "^1.69.7",
     "vue": "^3.4.10",
     "vue-router": "^4.2.5"
