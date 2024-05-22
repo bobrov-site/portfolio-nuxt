@@ -8,5 +8,6 @@ export default defineNuxtConfig({
   modules: ["nuxt-bootstrap-icons", 'nuxt-yandex-metrika'],
   yandexMetrika: {
     id: process.env.NUXT_YANDEX_METRICA_ID,
+    webvisor: true,
   }
 })
