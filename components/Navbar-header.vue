@@ -135,6 +135,9 @@
                                 </li>
                             </ul>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://github.com/bobrov-site/contributed" target="_blank">Open-source</a>
+                        </li>
                     </ul>
                     <div class="d-flex">
                         <a class="link-icon" href="https://github.com/bobrov-site" target="_blank">
