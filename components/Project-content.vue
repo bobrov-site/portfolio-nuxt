@@ -5,11 +5,14 @@
                 <div class="card p-2 mt-4">
                     <div class="card-body">
                         <h1 class="card-title">Проект: {{ props.title }}</h1>
-                        <div v-if="props.images" id="carouselExample" class="carousel slide mb-4" data-bs-ride="carousel">
+                        <div v-if="props.images" id="carouselExample" class="carousel slide mb-4 shadow-lg rounded-4" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div v-for="(item, index) in props.images" :key="index" class="carousel-item"
                                     :class="{ active: index === 0 }">
-                                    <img :src="item" :alt="`${item}${index}`" class="img-fluid rounded" />
+                                    <div class="d-flex justify-content-center">
+                                        <img :src="item" :alt="`${item}${index}`" class="img-fluid rounded carousel-image" />
+                                    </div>
+                                    
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
@@ -23,7 +26,7 @@
                                 <span class="visually-hidden">Next</span>
                             </button>
                         </div>
-                        <div v-if="props.ascinema" v-html="props.ascinema" class="ascinema w-100"></div>
+                        <div v-if="props.ascinema" v-html="props.ascinema" class="ascinema w-100 shadow-lg rounded-4"></div>
                         <h2 v-if="props.responsibilities" class="card-title">Обязанности:</h2>
                         <ul v-if="props.responsibilities" class="list-group mb-2">
                             <li v-for="item in props.responsibilities" :key="item" class="list-group-item">
@@ -76,6 +79,10 @@ const props = defineProps({
     img {
         width: 100%;
     }
+}
+
+.carousel-image {
+    max-height: 720px;
 }
 </style>
   
