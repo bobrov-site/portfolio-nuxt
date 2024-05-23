@@ -29,4 +29,10 @@ const props = defineProps({
 })
 </script>
   
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+.project-preview {
+    object-fit: cover;
+    max-height: 220px;
+}
+</style>
