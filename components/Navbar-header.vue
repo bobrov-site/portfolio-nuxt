@@ -103,6 +103,11 @@
                                     </NuxtLink>
                                 </li>
                                 <li>
+                                    <NuxtLink :class="{active: route.name === 'pet-educational-projects-SlackChat'}" class="dropdown-item" to="/pet/educational-projects/slackchat">
+                                        Slack чат
+                                    </NuxtLink>
+                                </li>
+                                <li>
                                     <hr class="dropdown-divider" />
                                 </li>
                                 <li>
