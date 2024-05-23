@@ -84,6 +84,18 @@
                                     </NuxtLink>
                                 </li>
                                 <li>
+                                    <NuxtLink :class="{ active: route.name === 'pet-tusks-Ostrovok' }" class="dropdown-item"
+                                        to="/pet/tusks/ostrovok">
+                                        Тестовые задачи для Островка
+                                    </NuxtLink>
+                                </li>
+                                <li>
+                                    <NuxtLink :class="{ active: route.name === 'pet-tusks-Tutu' }" class="dropdown-item"
+                                        to="/pet/tusks/tutu">
+                                        Тестовые задачи для Tutu.ru
+                                    </NuxtLink>
+                                </li>
+                                <li>
                                     <hr class="dropdown-divider" />
                                 </li>
                                 <li>
