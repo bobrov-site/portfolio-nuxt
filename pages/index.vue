@@ -16,7 +16,7 @@ useSeoMeta({
             <div class="card w-100 p-2 mt-4">
                 <div class="card-body">
                     <img src="/img/avatar2.jpg" class="avatar rounded-circle" alt="аватарка" />
-                    <h1 class="card-title">Фронтенд-разработчик, Даниил 👋</h1>
+                    <h1 class="card-title">Фронтенд-разработчик 👋</h1>
                     <h4>Технический стэк:</h4>
                     <div class="mt-2 mb-2 d-flex gap-2">
                         <span class="badge text-bg-success">Vue.js</span>
