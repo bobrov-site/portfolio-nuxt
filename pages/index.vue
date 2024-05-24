@@ -37,7 +37,7 @@ useSeoMeta({
                         улучшать свои навыки и создавать масштабные и полезные сервисы в команде
                         единомышленников
                     </p>
-                    <a href="cv.pdf" target="_blank" class="btn btn-primary">Посмотреть полное резюме PDF</a>
+                    <a href="hexlet-cv-resume-3.pdf" target="_blank" class="btn btn-primary">Посмотреть полное резюме PDF</a>
                 </div>
             </div>
             <TelegramPosts />
