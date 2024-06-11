@@ -8,5 +8,8 @@ export default defineNuxtConfig({
   modules: ["nuxt-bootstrap-icons", "yandex-metrika-module-nuxt3"],
   yandexMetrika: {
     id: '97306384',
-  }
+  },
+  future: {
+    compatibilityVersion: 4,
+  },
 })
