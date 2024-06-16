@@ -40,11 +40,11 @@ useSeoMeta({
                     <a href="hexlet-cv-resume-3.pdf" target="_blank" class="btn btn-primary">Посмотреть полное резюме PDF</a>
                 </div>
             </div>
-            <TelegramPosts />
-        </div>
-        <div class="col-12 col-lg-5">
             <LastProject :title="'Slack-Чат'" :breadcrumbs="['Пет-проекты', 'Учебные проекты']"
                 :img-src="'/img/slack-chat/slackchat1.png'" :project-url="'/pet/educational-projects/slackchat'" :date="'23.05.2024'"/>
+        </div>
+        <div class="col-12 col-lg-5">
+            
             <div class="card w-100 p-2 mt-4">
                 <div class="card-body">
                     <h4 class="card-title">Wakatime статистика</h4>
@@ -60,6 +60,9 @@ useSeoMeta({
                 </div>
             </div>
         <ClientsReviews />
+        </div>
+        <div class="col-12">
+            <TelegramPosts />
         </div>
     </div>
 </template>

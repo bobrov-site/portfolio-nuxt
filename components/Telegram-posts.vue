@@ -1,7 +1,7 @@
 <template>
     <div class="card w-100 p-2 mt-4">
         <div class="card-body">
-            <h2 class="card-title">Последний пост в Telegram канале 💬</h2>
+            <h2 class="card-title">Последние посты в Telegram канале 💬</h2>
             <a href="https://t.me/bobrov_frontend" target="_blank" class="btn btn-primary mb-2">Перейти в TG канал</a>
             <div v-if="loading" class="spinner-border" role="status">
                 <span class="visually-hidden">Loading...</span>
@@ -28,7 +28,7 @@ onMounted(async() => {
 const posts = ref([])
 const loading = ref(false)
 const getLastPosts = computed(() => {
-    return posts.value.slice(0, 1)
+    return posts.value.slice(0, 5)
 })
 const getPosts = async() => {
     loading.value = true
