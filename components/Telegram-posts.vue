@@ -1,7 +1,8 @@
 <template>
     <div class="card w-100 p-2 mt-4">
         <div class="card-body">
-            <h2 class="card-title">Последние посты в Telegram канале 💬</h2>
+            <h2 class="card-title">Последний пост в Telegram канале 💬</h2>
+            <a href="https://t.me/bobrov_frontend" target="_blank" class="btn btn-primary mb-2">Перейти в TG канал</a>
             <div v-if="loading" class="spinner-border" role="status">
                 <span class="visually-hidden">Loading...</span>
             </div>
@@ -11,10 +12,8 @@
                     <a :href="post.url" class="btn btn-primary mt-2">Перейти к посту</a>
                 </div>
             </div>
-            <a v-if="posts" href="https://t.me/bobrov_frontend" target="_blank" class="btn btn-lg btn-primary">Перейти в канал</a>
             <div v-if="posts.length === 0 && !loading">
                 <p class="card-text">Постов на данный момент нет. Но вы можете подписаться на блог 🫠</p>
-                <a href="https://t.me/bobrov_frontend" target="_blank" class="btn btn-primary">Перейти в канал</a>
             </div>
         </div>
     </div>
@@ -29,7 +28,7 @@ onMounted(async() => {
 const posts = ref([])
 const loading = ref(false)
 const getLastPosts = computed(() => {
-    return posts.value.slice(0, 5)
+    return posts.value.slice(0, 1)
 })
 const getPosts = async() => {
     loading.value = true
