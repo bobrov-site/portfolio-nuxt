@@ -58,12 +58,15 @@ useSeoMeta({
                     </figure>
                 </div>
             </div>
-            <div class="card w-100 p-2 mt-4">
+            <!-- 
+                <div class="card w-100 p-2 mt-4">
                 <div class="card-body">
                     <h4 class="card-title">LeetCode статистика</h4>
                     <img class="w-100" alt="leetcode статистика" src="https://camo.githubusercontent.com/2fb6557fc84d5b81cdb0eb5019d7050ad2b9b68417fae3eeeba1fb41f21e3a2b/68747470733a2f2f6c656574636f64652d73746174732d7369782e76657263656c2e6170702f3f757365726e616d653d626f62726f762d73697465267468656d653d6461726b">
                 </div>
-            </div>
+            </div>    
+                -->
+            
         <ClientsReviews />
         </div>
         <div class="col-12">
