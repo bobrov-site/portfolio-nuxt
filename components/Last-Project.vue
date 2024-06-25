@@ -9,7 +9,7 @@
                         <span v-for="(breadcrumb, index) in props.breadcrumbs" :key="breadcrumb"
                             :class="{ 'me-2': index === 0 }" class="badge text-bg-secondary">{{ breadcrumb }}</span>
                     </div>
-                    <img class="project-preview rounded w-100" :src="props.imgSrc" alt="" />
+                    <img class="project-preview rounded w-100 shadow" :src="props.imgSrc" alt="" />
                     <span class="text-secondary d-block">{{ props.date }}</span>
                     <NuxtLink class="btn btn-primary mt-2 mb-2" :to="props.projectUrl">Посмотреть проект</NuxtLink>
                 </div>
@@ -30,9 +30,11 @@ const props = defineProps({
 </script>
   
 <style lang="scss" scoped>
-
-.project-preview {
-    object-fit: cover;
-    max-height: 220px;
+@media screen and (max-width: 767px) {
+    .project-preview {
+        max-height: 250px;
+        object-fit: cover;
+        width: 100%;
+    }
 }
 </style>

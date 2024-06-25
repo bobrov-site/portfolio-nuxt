@@ -40,8 +40,8 @@ useSeoMeta({
                     <a href="hexlet-cv-resume-3.pdf" target="_blank" class="btn btn-primary">Посмотреть полное резюме PDF</a>
                 </div>
             </div>
-            <LastProject :title="'Slack-Чат'" :breadcrumbs="['Пет-проекты', 'Учебные проекты']"
-                :img-src="'/img/slack-chat/slackchat1.png'" :project-url="'/pet/educational-projects/slackchat'" :date="'23.05.2024'"/>
+            <LastProject :title="'Сервис аренды квартир'" :breadcrumbs="['Сайты', 'Фронтенд (Vue.js)']"
+                :img-src="'/img/fridda/fridda1.png'" :project-url="'/sites/frontend/fridda'" :date="'23.06.2024'"/>
         </div>
         <div class="col-12 col-lg-5">
             <div class="card w-100 p-2 mt-4">
@@ -57,7 +57,7 @@ useSeoMeta({
                         <embed src="https://wakatime.com/share/@bobrovSite/39094ffb-84bc-4f5e-b49b-deb58cf01c87.svg">
                     </figure>
                 </div>
-            </div>
+            </div>    
         <ClientsReviews />
         </div>
         <div class="col-12">
