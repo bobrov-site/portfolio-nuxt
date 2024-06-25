@@ -1,5 +1,9 @@
 <script setup>
-const articles = ref([])
+const articles = ref([
+    {
+        title: ''
+    }
+])
 const videos = ref([])
 const sites = ref([])
 const repositories = ref([])
@@ -30,22 +34,33 @@ onMounted(() => {
             </div>
             <div class="row mb-4 mt-4">
                 <div class="col-12">
-                    <SourceCard sectionTitle="Статьи" :sources="articles" />
+                    <div class="card">
+                        <div class="card-body">
+                            <h3>Статьи</h3>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <h4>Заголовок статьи</h4>
+                                    <p>Информация о статье</p>
+                                    <a href="#">Ссылка</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="row mb-4">
                 <div class="col-12">
-                    <SourceCard sectionTitle="Видео" />
+                    
                 </div>
             </div>
             <div class="row mb-4">
                 <div class="col-12">
-                    <SourceCard sectionTitle="Сайты" />
+                    
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
-                    <SourceCard sectionTitle="Репозитории" />
+                    
                 </div>
             </div>
         </div>
