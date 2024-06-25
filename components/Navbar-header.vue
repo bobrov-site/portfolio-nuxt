@@ -28,6 +28,10 @@
                                         to="/sites/frontend/evrotrans">Билеты на автобус</NuxtLink>
                                 </li>
                                 <li>
+                                    <NuxtLink :class="{ active: route.name === 'sites-frontend-Fridda' }" class="dropdown-item"
+                                        to="/sites/frontend/fridda">Сервис аренды квартир</NuxtLink>
+                                </li>
+                                <li>
                                     <hr class="dropdown-divider" />
                                 </li>
                                 <li>
