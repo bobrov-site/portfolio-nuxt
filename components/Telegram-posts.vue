@@ -2,14 +2,14 @@
     <div class="card w-100 p-2 mt-4">
         <div class="card-body">
             <h2 class="card-title">Последние посты в Telegram канале 💬</h2>
-            <a href="https://t.me/bobrov_frontend" target="_blank" class="btn btn-primary mb-2">Перейти в TG канал</a>
+            <a href="https://t.me/bobrov_frontend" target="_blank" class="btn btn-lg btn-primary mb-4">Перейти в TG канал</a>
             <div v-if="loading" class="spinner-border" role="status">
                 <span class="visually-hidden">Loading...</span>
             </div>
-            <div v-for="(post, index) in getLastPosts" :key="index" class="card mb-2">
+            <div v-for="(post, index) in getLastPosts" :key="index" class="card mb-2 shadow">
                 <div class="card-body">
                     <div class="card-content card-content-telegram" v-html="post.content_html"></div>
-                    <a :href="post.url" class="btn btn-primary mt-2">Перейти к посту</a>
+                    <a :href="post.url" class="btn btn-outline-primary mt-2">Перейти к посту</a>
                 </div>
             </div>
             <div v-if="posts.length === 0 && !loading">
