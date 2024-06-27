@@ -51,9 +51,9 @@ const addClassToImages = () => {
 <style lang="scss">
 .card-content-telegram {
     img {
-        max-height: 250px;
         object-fit: cover;
         width: 100%;
+        max-width: 720px;
     }
 }
 </style>
