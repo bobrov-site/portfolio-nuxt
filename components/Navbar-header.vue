@@ -151,12 +151,8 @@
                             <i class="bi bi-telegram me-2"></i>
                         </a>
                         <a class="link-icon" href="https://www.linkedin.com/in/daniil-bobrov/" target="_blank">
-                            <i class="bi bi-linkedin me-4"></i>
+                            <i class="bi bi-linkedin"></i>
                         </a>
-                        <button @click="callMe()" type="button" class="btn btn-outline-primary">
-                            Связаться со мной
-                            <i class="bi bi-telephone-fill"></i>
-                        </button>
                     </div>
                 </div>
             </div>
@@ -168,9 +164,6 @@
 
 const route = useRoute()
 
-const callMe = () => {
-    return (location.href = 'tel:+7 962 425 66 01')
-}
 </script>
   
 <style lang="scss" scoped>
