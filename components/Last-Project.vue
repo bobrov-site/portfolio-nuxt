@@ -2,7 +2,7 @@
     <div class="card w-100 p-2 mt-4">
         <div class="card-body">
             <h4 class="card-title">Последний проект в портфолио 🥹</h4>
-            <div class="card border-primary text-bg-light">
+            <div @mouseover="isHover = true" @mouseleave="isHover = false" :class="{ 'shadow-lg': isHover }" class="card border-primary text-bg-light">
                 <div class="card-body">
                     <h6 class="card-title d-flex justify-content-between">
                         <span>{{ props.title }}</span>
@@ -30,6 +30,8 @@ const props = defineProps({
     breadcrumbs: Array,
     date: String,
 })
+
+const isHover = ref(false)
 </script>
   
 <style lang="scss" scoped>
