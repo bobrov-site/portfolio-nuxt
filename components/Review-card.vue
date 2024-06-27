@@ -10,11 +10,9 @@
                 <i class="bi bi-star-fill"></i>
                 <i class="bi bi-star-fill"></i>
             </div>
-            <p v-if="!isShowFullText" @click="showFullText()" class="card-text pointer">
-                {{ cropText(reviewText) }}
+            <p @click="showFullText" :class="{'wrapper-text': !isShowFullText}" class="card-text pointer">
+                {{ reviewText }}    
             </p>
-            <p v-else class="card-text">{{ reviewText }}</p>
-            <a v-if="url" :href="url" target="_blank">Перейти в профиль клиента в VK</a>
         </div>
     </div>
 </template>
@@ -22,12 +20,7 @@
 <script setup>
 
 const showFullText = () => {
-    return (isShowFullText.value = !isShowFullText.value)
-}
-const cropText = (text) => {
-    if (text.length > 200) {
-        return text.slice(0, 200) + '...'
-    }
+    isShowFullText.value = !isShowFullText.value
 }
 const isShowFullText = ref(false)
 defineProps({
@@ -52,5 +45,13 @@ defineProps({
 
 .pointer {
     cursor: pointer;
+}
+
+.wrapper-text {
+    -webkit-line-clamp: 5;
+	line-clamp: 5;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 }
 </style>
