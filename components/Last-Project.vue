@@ -2,16 +2,19 @@
     <div class="card w-100 p-2 mt-4">
         <div class="card-body">
             <h4 class="card-title">Последний проект в портфолио 🥹</h4>
-            <div class="card">
+            <div class="card border-primary text-bg-light">
                 <div class="card-body">
-                    <h6 class="card-title">{{ props.title }}</h6>
+                    <h6 class="card-title d-flex justify-content-between">
+                        <span>{{ props.title }}</span>
+                        <span class="text-secondary d-block">{{ props.date }}</span>
+                    </h6>
                     <div class="mb-2">
                         <span v-for="(breadcrumb, index) in props.breadcrumbs" :key="breadcrumb"
                             :class="{ 'me-2': index === 0 }" class="badge text-bg-secondary">{{ breadcrumb }}</span>
                     </div>
-                    <img class="project-preview rounded w-100 shadow" :src="props.imgSrc" alt="" />
-                    <span class="text-secondary d-block">{{ props.date }}</span>
-                    <NuxtLink class="btn btn-primary mt-2 mb-2" :to="props.projectUrl">Посмотреть проект</NuxtLink>
+                    
+                    <img class="project-preview rounded w-100 shadow-sm mb-4" :src="props.imgSrc" alt="" />
+                    <NuxtLink class="btn btn-lg btn-primary stretched-link" :to="props.projectUrl">Посмотреть проект</NuxtLink>
                 </div>
             </div>
         </div>
