@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   plugins: [
     { src: '~/plugins/useBootstrap.ts', mode: 'client' },
   ],
-  modules: ["nuxt-bootstrap-icons", "yandex-metrika-module-nuxt3"],
+  modules: ["nuxt-bootstrap-icons", "yandex-metrika-module-nuxt3", '@nuxtjs/seo'],
   site: {
     url: 'https://bobrov-site.vercel.app',
     name: 'Бобров Даниил | Портфолио | Frontend-developer | Vue | Nuxt | React | JS | TS | GIT',
