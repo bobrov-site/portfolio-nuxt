@@ -96,6 +96,18 @@
                                     </NuxtLink>
                                 </li>
                                 <li>
+                                    <NuxtLink :class="{ active: route.name === 'pet-tusks-Roistat' }" class="dropdown-item"
+                                        to="/pet/tusks/roistat">
+                                        Тестовое задание для Roistat
+                                    </NuxtLink>
+                                </li>
+                                <li>
+                                    <NuxtLink :class="{ active: route.name === 'pet-tusks-Diginetica' }" class="dropdown-item"
+                                        to="/pet/tusks/diginetica">
+                                        Тестовое задание для Diginetica
+                                    </NuxtLink>
+                                </li>
+                                <li>
                                     <hr class="dropdown-divider" />
                                 </li>
                                 <li>
