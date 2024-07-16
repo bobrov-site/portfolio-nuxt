@@ -41,11 +41,12 @@ useSeoMeta({
                     <p class="card-text">
                         Вхожу в топ 3 контрибьютеров в open-source проекте <a href="https://github.com/hexlet-rus/runit" target="_blank">Runit</a>
                     </p>
-                    <p class="card-text">
+                    <p class="card-text text-decoration-line-through">
                         Рассматриваю вакансию на позицию фронтенд-разработчика в компанию, где смогу
                         улучшать свои навыки и создавать масштабные и полезные сервисы в команде
                         единомышленников
                     </p>
+                    <p class="card-text font-bold">Являюсь фронтенд-разработчиком в компании <a href="https://rusrobots.ru/" target="_blank">Russian Robotics</a></p>
                     <a href="cv.pdf" target="_blank" class="btn btn-lg btn-primary">Посмотреть полное резюме PDF</a>
                 </div>
             </div>
