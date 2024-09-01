@@ -57,7 +57,7 @@ useSeoMeta({
             <div class="card w-100 p-2 mt-4">
                 <div class="card-body">
                     <h4 class="card-title">Популярные языки статистика</h4>
-                    <img class="w-100" src="https://camo.githubusercontent.com/afba742a1afcdcc49f850c2c07f052cc7c2bfd28b5523ffffc6d26f0bf2882c3/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67732f3f757365726e616d653d626f62726f762d73697465266c61796f75743d636f6d70616374267468656d653d6d61726f6f6e676f6c64">
+                    <img class="w-100" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bobrov-site&layout=compact&theme=maroongold">
                 </div>
             </div>
             <div class="card w-100 p-2 mt-4">
