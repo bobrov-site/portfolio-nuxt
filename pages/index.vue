@@ -46,7 +46,7 @@ useSeoMeta({
                         улучшать свои навыки и создавать масштабные и полезные сервисы в команде
                         единомышленников
                     </p>
-                    <p class="card-text font-bold">Являюсь фронтенд-разработчиком в IT компании</p>
+                    <p class="card-text font-bold">Являюсь фронтенд-разработчиком в компании <a href="https://rusrobots.ru/" target="_blank">Russian Robotics</a></p>
                     <a href="cv.pdf" target="_blank" class="btn btn-lg btn-primary">Посмотреть полное резюме PDF</a>
                 </div>
             </div>
