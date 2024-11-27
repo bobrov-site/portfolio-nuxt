@@ -19,6 +19,11 @@
                                 <li>
                                     <h6 class="dropdown-header">Nuxt.js</h6>
                                 </li>
+                                <li class="d-none">
+                                    <NuxtLink to="/sites/nuxt/kuban" :class="{ active: route.name === 'sites-nuxt-Kuban' }" class="dropdown-item">
+                                        Наука Кубань 0+
+                                    </NuxtLink>
+                                </li>
                                 <li>
                                     <NuxtLink to="/sites/nuxt/choosealicense" :class="{ active: route.name === 'sites-nuxt-Choosealicense' }" class="dropdown-item">
                                         Сервис подбора лицензии
