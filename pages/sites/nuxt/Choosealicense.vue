@@ -1,5 +1,5 @@
 <template>
-    <ProjectContent :techStack="techStack" :githubUrl="githubUrl" :siteUrl="siteUrl" :title="title" :images="images"
+    <ProjectContent :techStack="techStack" :siteUrl="siteUrl" :title="title" :images="images"
     :responsibilities="responsibilities" :achivments="achivments" />
 </template>
 
