@@ -17,15 +17,26 @@
                             </a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <h6 class="dropdown-header">Фронтенд (vue.js)</h6>
+                                    <h6 class="dropdown-header">Nuxt.js</h6>
+                                </li>
+                                <li>
+                                    <NuxtLink to="/sites/nuxt/choosealicense" :class="{ active: route.name === 'sites-nuxt-Choosealicense' }" class="dropdown-item">
+                                        Сервис подбора лицензии
+                                    </NuxtLink>
+                                </li>
+                                <li>
+                                    <NuxtLink :class="{ active: route.name === 'sites-frontend-Fridda' }" class="dropdown-item"
+                                    to="/sites/frontend/fridda">Сервис аренды квартир</NuxtLink>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <h6 class="dropdown-header">Vue.js</h6>
                                 </li>
                                 <li>
                                     <NuxtLink :class="{ active: route.name === 'sites-frontend-Evrotrans' }" class="dropdown-item"
                                         to="/sites/frontend/evrotrans">Билеты на автобус</NuxtLink>
-                                </li>
-                                <li>
-                                    <NuxtLink :class="{ active: route.name === 'sites-frontend-Fridda' }" class="dropdown-item"
-                                        to="/sites/frontend/fridda">Сервис аренды квартир</NuxtLink>
                                 </li>
                                 <li>
                                     <hr class="dropdown-divider" />
@@ -171,6 +182,52 @@
 <script setup>
 
 const route = useRoute()
+// TODO доделать вывод страниц через цикл
+const pages = [
+    {
+        title: 'Nuxt.js',
+        items: [
+            {
+                title: 'Билеты на автобус',
+                url: '/sites/vue/evrotrans',
+            },
+            {
+                title: 'Сервис аренды квартир',
+                url: '/sites/vue/fridda',
+            },
+        ]
+    },
+    {
+        title: 'Под ключ (дизайн и wordpress)',
+        items: [
+            {
+                title: 'Агропромышленная техника и запчасти',
+                url: '/sites/keys/mag',
+            },
+            {
+                title: 'Авто из США в Россию',
+                url: '/sites/keys/gogocars',
+            },
+            {
+                title: 'Газификация объектов',
+                url: '/sites/keys/stavgaz',
+            }
+        ]
+    },
+    {
+        title: 'Разработка на Wordpress',
+        items: [
+            {
+                title: 'Корпоративный тренер из США',
+                url: '/sites/wordpress/academyofmotivation',
+            },
+            {
+                title: 'Печать фотографий на кружках',
+                url: '/sites/wordpress/printboom',
+            }
+        ]
+    }
+]
 
 </script>
   
