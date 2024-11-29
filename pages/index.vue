@@ -40,14 +40,14 @@
             </div>
             <LastProject :title="'Сервис аренды квартир'" :breadcrumbs="['Сайты', 'Фронтенд (Vue.js)']"
                 :img-src="'/img/fridda/fridda1.png'" :project-url="'/sites/frontend/fridda'" :date="'23.06.2024'"/>
-        </div>
-        <div class="col-12 col-lg-5">
             <div class="card w-100 p-2 mt-4">
                 <div class="card-body">
-                    <h4 class="card-title">Популярные языки статистика</h4>
-                    <img class="w-100" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bobrov-site&layout=compact&theme=maroongold">
+                    <h4 class="card-title">Видео 📹</h4>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/94bUCLpn9s0?si=GaydQXg0b_nT6Du6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
+        </div>
+        <div class="col-12 col-lg-5">
             <div class="card w-100 p-2 mt-4">
                 <div class="card-body">
                     <h4 class="card-title">Wakatime статистика</h4>
@@ -55,7 +55,19 @@
                         <embed src="https://wakatime.com/share/@bobrovSite/39094ffb-84bc-4f5e-b49b-deb58cf01c87.svg">
                     </figure>
                 </div>
-            </div>    
+            </div>
+            <div class="card w-100 p-2 mt-4">
+                <div class="card-body">
+                    <h4 class="card-title">Популярные языки статистика</h4>
+                    <img class="w-100" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bobrov-site&layout=compact&theme=maroongold" alt="langs">
+                </div>
+            </div>
+            <div class="card w-100 p-2 mt-4">
+                <div class="card-body">
+                    <h4 class="card-title">Leetcode статистика</h4>
+                    <img class="w-100" src="https://leetcard.jacoblin.cool/bobrov-site?theme=dark&font=PT%20Sans" alt="leetcode"/>
+                </div>
+            </div>
         <ClientsReviews />
         </div>
         <div class="col-12">
