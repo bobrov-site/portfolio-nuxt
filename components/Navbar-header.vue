@@ -19,9 +19,9 @@
                                 <li>
                                     <h6 class="dropdown-header">Nuxt.js</h6>
                                 </li>
-                                <li class="d-none">
+                                <li>
                                     <NuxtLink to="/sites/nuxt/kuban" :class="{ active: route.name === 'sites-nuxt-Kuban' }" class="dropdown-item">
-                                        Наука Кубань 0+
+                                        Крупнейший научно-популярный фестиваль
                                     </NuxtLink>
                                 </li>
                                 <li>
