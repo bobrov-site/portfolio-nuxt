@@ -44,7 +44,7 @@ const siteUrl = 'https://choosealicense.ru/'
 const techStack = [
     'HTML',
     'CSS',
-    'JS',
+    'typescript',
     'Vue.js',
     'Nuxt.js',
     'NuxtUI',
