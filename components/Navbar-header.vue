@@ -20,6 +20,10 @@
                                     <h6 class="dropdown-header">Nuxt.js</h6>
                                 </li>
                                 <li>
+                                    <NuxtLink :class="{ active: route.name === 'sites-frontend-Fridda' }" class="dropdown-item"
+                                    to="/sites/frontend/fridda">Сервис аренды квартир</NuxtLink>
+                                </li>
+                                <li>
                                     <NuxtLink to="/sites/nuxt/choosealicense" :class="{ active: route.name === 'sites-nuxt-Choosealicense' }" class="dropdown-item">
                                         Сервис подбора лицензии
                                     </NuxtLink>
@@ -38,10 +42,6 @@
                                     <NuxtLink to="/sites/nuxt/ajax" :class="{ active: route.name === 'sites-nuxt-Ajax' }" class="dropdown-item">
                                         Поиск недвижимости в Краснодаре
                                     </NuxtLink>
-                                </li>
-                                <li>
-                                    <NuxtLink :class="{ active: route.name === 'sites-frontend-Fridda' }" class="dropdown-item"
-                                    to="/sites/frontend/fridda">Сервис аренды квартир</NuxtLink>
                                 </li>
                                 <li>
                                     <hr class="dropdown-divider" />
