@@ -20,8 +20,8 @@
                                     <h6 class="dropdown-header">Nuxt.js</h6>
                                 </li>
                                 <li>
-                                    <NuxtLink to="/sites/nuxt/pizzacuba" :class="{ active: route.name === 'sites-nuxt-Pizzacuba' }" class="dropdown-item">
-                                        Пиццерия куба
+                                    <NuxtLink to="/sites/nuxt/choosealicense" :class="{ active: route.name === 'sites-nuxt-Choosealicense' }" class="dropdown-item">
+                                        Сервис подбора лицензии
                                     </NuxtLink>
                                 </li>
                                 <li>
@@ -30,8 +30,13 @@
                                     </NuxtLink>
                                 </li>
                                 <li>
-                                    <NuxtLink to="/sites/nuxt/choosealicense" :class="{ active: route.name === 'sites-nuxt-Choosealicense' }" class="dropdown-item">
-                                        Сервис подбора лицензии
+                                    <NuxtLink to="/sites/nuxt/pizzacuba" :class="{ active: route.name === 'sites-nuxt-Pizzacuba' }" class="dropdown-item">
+                                        Пиццерия куба
+                                    </NuxtLink>
+                                </li>
+                                <li>
+                                    <NuxtLink to="/sites/nuxt/pizzacuba" :class="{ active: route.name === 'sites-nuxt-Ajax' }" class="dropdown-item">
+                                        Поиск недвижимости в Краснодаре
                                     </NuxtLink>
                                 </li>
                                 <li>
