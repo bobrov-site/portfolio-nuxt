@@ -20,6 +20,11 @@
                                     <h6 class="dropdown-header">Nuxt.js</h6>
                                 </li>
                                 <li>
+                                    <NuxtLink to="/sites/nuxt/pizzacuba" :class="{ active: route.name === 'sites-nuxt-Pizzacuba' }" class="dropdown-item">
+                                        Пиццерия куба
+                                    </NuxtLink>
+                                </li>
+                                <li>
                                     <NuxtLink to="/sites/nuxt/kuban" :class="{ active: route.name === 'sites-nuxt-Kuban' }" class="dropdown-item">
                                         Крупнейший научно-популярный фестиваль
                                     </NuxtLink>
@@ -127,7 +132,7 @@
                                     <hr class="dropdown-divider" />
                                 </li>
                                 <li>
-                                    <h6 class="dropdown-header">Учебные проекты</h6>
+                                    <h6 class="dropdown-header">Учебные проекты Хекслет</h6>
                                 </li>
                                 <li>
                                     <NuxtLink :class="{ active: route.name === 'pet-educational-projects-BrainGames' }" class="dropdown-item"
