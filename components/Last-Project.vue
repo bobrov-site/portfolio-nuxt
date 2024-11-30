@@ -2,7 +2,7 @@
     <div class="card w-100 p-2 mt-4">
         <div class="card-body">
             <h4 class="card-title">Последний проект в портфолио 🥹</h4>
-            <div @mouseover="isHover = true" @mouseleave="isHover = false" :class="{ 'shadow-lg': isHover }" class="card border-primary text-bg-light">
+            <div @mouseover="isHover = true" @mouseleave="isHover = false" :class="{ 'shadow-lg': isHover }" class="card border-success text-bg-light">
                 <div class="card-body">
                     <h6 class="card-title d-flex justify-content-between">
                         <span>{{ props.title }}</span>
@@ -14,7 +14,7 @@
                     </div>
                     
                     <img class="project-preview rounded w-100 shadow-sm mb-4" :src="props.imgSrc" alt="" />
-                    <NuxtLink class="btn btn-lg btn-primary stretched-link" :to="props.projectUrl">Посмотреть проект</NuxtLink>
+                    <NuxtLink class="btn btn-lg btn-success stretched-link" :to="props.projectUrl">Посмотреть проект</NuxtLink>
                 </div>
             </div>
         </div>
