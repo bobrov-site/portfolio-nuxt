@@ -5,11 +5,7 @@
                     <h1 class="card-title">Фронтенд-разработчик 👋</h1>
                     <h4>Технический стэк:</h4>
                     <div class="mt-2 mb-2 d-flex gap-2">
-                        <span class="badge text-bg-success">Vue.js</span>
-                        <span class="badge text-bg-success">Nuxt.js</span>
-                        <span class="badge text-bg-success">React.js</span>
-                        <span class="badge text-bg-success">JS</span>
-                        <span class="badge text-bg-success">TS</span>
+                        <span v-for="item in stack" :key="item" class="badge text-bg-success">{{ item }}</span>
                     </div>
                     <p class="card-text">
                         Занимаюсь разработкой сайтов 3+ года. 
@@ -39,7 +35,13 @@
 </template>
 
 <script setup>
-
+const stack = [
+    'Vue.js',
+    'Nuxt.js',
+    'React.js',
+    'JS',
+    'TS'
+]
 </script>
 
 <style lang="scss" scoped>
