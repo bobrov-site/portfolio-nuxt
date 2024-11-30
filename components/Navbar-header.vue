@@ -35,7 +35,7 @@
                                     </NuxtLink>
                                 </li>
                                 <li>
-                                    <NuxtLink to="/sites/nuxt/pizzacuba" :class="{ active: route.name === 'sites-nuxt-Ajax' }" class="dropdown-item">
+                                    <NuxtLink to="/sites/nuxt/ajax" :class="{ active: route.name === 'sites-nuxt-Ajax' }" class="dropdown-item">
                                         Поиск недвижимости в Краснодаре
                                     </NuxtLink>
                                 </li>
