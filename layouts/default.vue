@@ -9,6 +9,12 @@
         <FooterBar/>
     </div>
 </template>
+<script setup>
+const app = appStore();
+onBeforeMount(() => {
+    app.initTheme();
+})
+</script>
 <style lang="scss" scoped>
 .app {
     height: 100vh;
