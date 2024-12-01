@@ -188,7 +188,7 @@
                             <i class="bi bi-linkedin"></i>
                         </a>
                     </div>
-                    <div class="d-flex ms-4">
+                    <div class="d-flex ms-0 ms-lg-4">
                         <button @click="switchTheme" class="btn btn-primary rounded" type="button">
                             <i v-if="theme === 'light'" class="bi bi-moon"></i>
                             <i v-if="theme === 'dark'" class="bi bi-sun"></i>
