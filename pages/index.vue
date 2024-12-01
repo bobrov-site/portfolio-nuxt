@@ -19,9 +19,8 @@
             <div class="card w-100 p-2 mt-4">
                 <div class="card-body">
                     <h4 class="card-title">Wakatime статистика</h4>
-                    <figure>
-                        <embed src="https://wakatime.com/share/@bobrovSite/39094ffb-84bc-4f5e-b49b-deb58cf01c87.svg">
-                    </figure>
+                    <figure v-if="app.theme === 'light'"><embed src="https://wakatime.com/share/@bobrovSite/39094ffb-84bc-4f5e-b49b-deb58cf01c87.svg"></figure>
+                    <figure v-else><embed src="https://wakatime.com/share/@bobrovSite/1916b64c-3bc1-466b-ae4e-381a89767a6e.svg"></embed></figure>
                 </div>
             </div>
             <div class="card w-100 p-2 mt-4">
@@ -50,6 +49,8 @@
     </div>
 </template>
 <script setup>
+import { appStore } from '~/stores/app';
+
 useSeoMeta({
     title: 'Бобров Даниил | Портфолио | Frontend-developer | Vue | Nuxt | React | JS | TS | GIT',
     description: `Занимаюсь разработкой сайтов 3+ года. Мною были разработаны разного типа: лендинги,
@@ -60,6 +61,7 @@ useSeoMeta({
     ogDescription: `Занимаюсь разработкой сайтов 3+ года. Мною были разработаны разного типа: лендинги,
                         многостраничные сайты и интернет магазины разной коммерческой направленности.`
 })
+const app = appStore();
 const projects = [
     {
         title: 'Fridda - сервис аренды квартир',
