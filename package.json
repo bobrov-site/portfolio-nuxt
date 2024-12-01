@@ -18,9 +18,11 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
+    "@pinia/nuxt": "^0.8.0",
     "@popperjs/core": "^2.11.8",
     "axios": "^1.6.5",
     "bootstrap": "^5.3.3",
+    "pinia": "^2.2.8",
     "yandex-metrika-module-nuxt3": "^1.5.3"
   }
 }
