@@ -15,6 +15,13 @@ export default defineNuxtConfig({
   yandexMetrika: {
     id: '97306384',
   },
+  app: {
+    head: {
+      meta: [{
+        content: 'e103b7715abef1ca', name: 'yandex-verification',
+      }]
+    }
+  },
   future: {
     compatibilityVersion: 4,
   },
