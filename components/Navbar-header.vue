@@ -189,9 +189,9 @@
                         </a>
                     </div>
                     <div class="d-flex ms-0 ms-lg-4">
-                        <button @click="switchTheme" class="btn btn-primary rounded" type="button">
-                            <i v-if="theme === 'light'" class="bi bi-moon"></i>
-                            <i v-if="theme === 'dark'" class="bi bi-sun"></i>
+                        <button @click="app.switchTheme" class="btn btn-primary rounded" type="button">
+                            <i v-if="app.theme === 'light'" class="bi bi-moon"></i>
+                            <i v-if="app.theme === 'dark'" class="bi bi-sun"></i>
                         </button>
                     </div>
                 </div>
@@ -201,6 +201,8 @@
 </template>
   
 <script setup>
+import { appStore } from '~/stores/app';
+
 const route = useRoute()
 // TODO доделать вывод страниц через цикл
 const pages = [
@@ -248,25 +250,7 @@ const pages = [
         ]
     }
 ]
-
-const theme = ref('');
-
-const switchTheme = () => {
-    const html = document.querySelector('html');
-    html.dataset.bsTheme = html.dataset.bsTheme === 'dark' ? 'light' : 'dark';
-    theme.value = html.dataset.bsTheme
-}
-
-const initTheme = () => {
-    const isDarkTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const html = document.querySelector('html');
-    html.dataset.bsTheme = isDarkTheme ? 'dark' : 'light';
-    theme.value = isDarkTheme ? 'dark' : 'light';
-}
-
-onBeforeMount(() => {
-    initTheme();
-})
+const app = appStore();
 
 </script>
   
