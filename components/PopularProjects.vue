@@ -3,7 +3,7 @@
         <div class="card-body">
             <h4 class="card-title">Вам стоит увидеть эти проекты 🔥</h4>
             <div class="container popular-projects">
-                <div class="row">
+                <div class="row g-4">
                     <div v-for="(project, index) in projects" :key="index" class="col-12 col-lg-4" >
                         <NuxtLink :to="project.url">
                             <div class="popular-project flex flex-column border border-success p-2 rounded">
