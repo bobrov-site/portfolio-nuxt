@@ -14,6 +14,7 @@ export default defineNuxtConfig({
   },
   yandexMetrika: {
     id: '97306384',
+    webvisor: true,
   },
   app: {
     head: {
