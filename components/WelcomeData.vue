@@ -4,7 +4,7 @@
                     <img src="/img/avatar2.jpg" class="avatar rounded-circle" alt="аватарка" />
                     <h1 class="card-title">{{ `<Привет, друг!>` }}</h1>
                     <hr>
-                    <p class="card-text font-bold">Фронтенд-разработчиком в компании <a href="https://rusrobots.ru/" target="_blank">Russian Robotics</a></p>
+                    <p class="card-text font-bold">Фронтенд-разработчик</p>
                     <p class="card-text">
                         Занимаюсь разработкой сайтов 4+ года. 
                     </p>
