@@ -29,7 +29,7 @@
                         улучшать свои навыки и создавать масштабные и полезные сервисы в команде
                         единомышленников
                     </p>
-                    <a href="cv.pdf" target="_blank" class="btn btn-lg btn-primary">Посмотреть резюме PDF</a>
+                    <!-- <a href="cv.pdf" target="_blank" class="btn btn-lg btn-primary">Посмотреть резюме PDF</a> -->
                 </div>
             </div>
 </template>
