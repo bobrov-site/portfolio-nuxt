@@ -2,7 +2,7 @@
     <div class="row">
         <div class="col-12 col-lg-7">
             <WelcomeData />
-            <LastProject :title="'Сервис аренды квартир'" :breadcrumbs="['Сайты', 'Фронтенд (Vue.js)']"
+            <!-- <LastProject :title="'Сервис аренды квартир'" :breadcrumbs="['Сайты', 'Фронтенд (Vue.js)']"
                 :img-src="'/img/fridda/fridda1.png'" :project-url="'/sites/frontend/fridda'" :date="'23.06.2024'" />
             <div class="card w-100 p-2 mt-4">
                 <div class="card-body">
@@ -13,7 +13,7 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="col-12 col-lg-5">
             <div class="card w-100 p-2 mt-4">
